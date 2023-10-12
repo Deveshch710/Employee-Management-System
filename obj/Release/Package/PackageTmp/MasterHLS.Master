@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterHLS.master.cs" Inherits="WebApplication1.MasterHLS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%-- Own Style Sheet --%>
+    <link href="MasterHLSStyle.css" rel="stylesheet" />
+
+    <%-- bootstrap css --%>
+    <link href="BootStrapFiles/BootCss/bootcss1.css" rel="stylesheet" />
+
+    <%-- bootstap js --%>
+    
+
+
+    <%-- Own Style Sheet --%>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <nav class="Navigationbar">
+            
+            <%-- Company name and logo --%>
+            <div class="name">
+                  <%-- Comany Logo --%>
+                <div class="mainimage">
+                    <img src="Images/MainLogo.png"  width="60" height="60"/>
+                </div>
+                  <%-- Comany name --%>
+                <div class="namename">
+                    <h4>ITADAKIMASU</h4>
+                    <h5>S A K U R A</h5>
+                </div>
+                
+            </div>
+
+            <div class="buttons">
+                <a href="UserLogin.aspx">
+                    <input id="Button1" class="btn btn-primary" type="button" value="Log IN" />
+                </a>
+                <a href="UserSignup.aspx">
+                    <input id="Button2" class="btn btn-success" type="button" value="Sign UP" />
+                </a>
+            </div>
+
+        </nav>
+
+    <%-- Main Content --%>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <%-- Footer --%>
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Manager Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Report Issue</asp:LinkButton>
+                            &nbsp;
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke">&copy All right Reversed. <a class="footerlinks" href="#" target="_blank">ITADAKIMASU    S A K U R A</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </form>
+
+
+
+</body>
+</html>

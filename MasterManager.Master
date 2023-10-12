@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterManager.Master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%-- bootstrap css --%>
+    <link href="MasterManagerStyle.css" rel="stylesheet" />
+
+    <%-- Database css --%>
+    <link href="DataTable/datatablecssfiles/datatablecss.css" rel="stylesheet" />
+     
+    <%-- bootstrap css --%>
+    <link href="BootStrapFiles/BootCss/bootcss1.css" rel="stylesheet" />
+
+    <%-- fontassome css --%>
+    <link href="FontAwseom/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet" />
+
+    <%-- Database Js --%>
+    <script src="DataTable/datatablejsfiles/datatablejs.js"></script>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="Navigationbar">
+
+                 <%-- Company name and logo --%>
+
+                 <div class="name">
+                     <%-- Comany Logo --%>
+                    <div class="mainimage">
+                        <img src="Images/MainLogo.png"  width="60" height="60"/>
+                    </div>
+                     <%-- Comany name --%>
+                     <div class="namename">
+                        <h4>ITADAKIMASU</h4>
+                        <h5>S A K U R A</h5>
+                     </div>
+                
+                  </div>
+                 
+                <div class="userthings">
+
+                    <%-- DashBoad --%>
+                    <div class="dashboad">
+                        <a href="ManagerDashboard.aspx">
+                            <h5>Dashboad</h5>
+                        </a>
+                    </div>
+                    
+                    <%-- AssignTask --%>
+                    <div class="assigntask">
+                        <a href="ManagerAssigingTask.aspx">
+                            <h5>AssignTask</h5>
+                        </a>
+                    </div>
+                    
+                    <%-- LeaveApproval --%>
+                    <div class="leaveapproval">
+                        <a href="ManagerLeaveApproval.aspx">
+                            <h5>LeaveApproval</h5>
+                        </a>
+                    </div>
+                    
+                    <%-- Task Assign --%>
+                    <div class="taskassign">
+                        <a href="ManagerTaskAssigend.aspx">
+                            <h5>TaskAssigned</h5>
+                        </a>
+                    </div>
+                    
+                    <%-- Leaves --%>
+                    <div class="leaves">
+                        <a href="ManagerLeave.aspx">
+                            <h5>Leaves</h5>
+                        </a>
+                    </div>    
+
+                    <div class="username">
+                        <i class="fa-regular fa-user" style="color: #9e2b2b;"></i> <asp:LinkButton  ID="LinkButton1" OnClick="Button1_Click" runat="server"> Manager Login</asp:LinkButton>
+                            &nbsp;
+                    </div>
+
+                </div>
+
+
+
+
+
+            </nav>
+
+
+
+
+
+
+            <%-- Main Content --%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+    </form>
+</body>
+</html>

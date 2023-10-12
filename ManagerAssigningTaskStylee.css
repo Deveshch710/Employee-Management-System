@@ -1,0 +1,150 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+
+.BigHeading{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.BigHeading h1 {
+    font-size: 4vw;
+    color: #9E2B2B;
+    font-weight: 900;
+    border-bottom: 5px solid #022840;
+    margin: 1%;
+}
+
+.container{
+    width:100vw;
+    height:auto;
+    margin-top:3px;
+    padding:4px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border:2px solid black;
+}
+
+.left{
+    border-right:5px solid Black;
+    width:45%;
+    height:auto;
+    padding:14px;
+}
+.Text{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.image1 img {
+    width: 5vw;
+    height: auto;
+}
+.subheading h3 {
+    font-size: 2vw;
+    color: #9E2B2B;
+    font-weight: 900;
+    border-bottom: 5px solid #022840;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputabs {
+    margin:5%;
+}
+.box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    flex-wrap:wrap;
+}
+.empid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.TaskId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.empname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.empdepart {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.box2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.taskdis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.upfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.dead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.buttonthree{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.right {
+    width: 55%;
+    height: auto;
+    padding: 14px;
+    
+}
+.TaskAssignTo{
+   height:auto;
+   overflow:scroll;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .container{
+        flex-direction:column-reverse;
+        width:40%;
+        height:auto;
+        justify-content:center;
+        align-items:center;
+        gap:2vw;
+    }
+    .left{
+        width:auto;
+    }
+    .right{
+        width:auto;
+    }
+}

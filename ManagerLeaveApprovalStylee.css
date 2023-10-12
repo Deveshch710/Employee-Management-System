@@ -1,0 +1,103 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 2px solid black;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    margin: 8px;
+    padding: 2px;
+}
+
+.upper {
+    width: 95%;
+    height: auto;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.BigHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .BigHeading h1 {
+        font-size: 4vw;
+        color: #9E2B2B;
+        font-weight: 900;
+        border-bottom: 5px solid #022840;
+        margin: 1%;
+    }
+
+    .BigHeading h3 {
+        font-size: 2.5vw;
+        color: #9E2B2B;
+        font-weight: 900;
+        border-bottom: 5px solid #022840;
+        margin: 1%;
+    }
+
+.inputtag {
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.leavetype {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.startdate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.enddate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.buttonapply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.lower {
+    width: 95%;
+    height: 30%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        height: 100vh;
+    }
+
+    .inputtag {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

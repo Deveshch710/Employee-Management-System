@@ -1,0 +1,60 @@
+﻿*{
+    margin:0;
+    padding:0; 
+}
+
+.container{
+    border:2px solid black;   
+    margin:20px;
+}
+.subcontainer{
+    margin-top:4px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin:10px;
+}
+.subcontainer img {
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+}
+.heading h1 {
+    font-size: 3vw;
+    color: #9E2B2B;
+    font-weight: 900;
+    border-bottom: 5px solid #022840;
+    margin: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputtabs{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin:10px;
+    gap:2%;
+}
+.heading{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Risponsiveness*/
+@media only screen and (max-width: 1000px) {
+    .container{
+       height:80vh;
+       overflow:scroll;
+    }
+    .inputtabs{
+       flex-direction:column;
+       width:70vw;
+       gap:10px;
+    }
+    .inputtabs input{
+        width:70vw;
+    }
+}
